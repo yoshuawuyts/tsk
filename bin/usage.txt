@@ -1,0 +1,23 @@
+Usage: tsk [options] [commands]
+
+Options:
+  -h, --help        Output usage information
+  -v, --version     Output version number
+
+Commands:
+  tsk init [dir]                    Initialize a new tsk database
+  tsk status [filters] [format]     Output
+  tsk add [tags] <name> <message>   Add a task (-i for interactive)
+  tsk rm <sha>                      Remove a task
+  tsk stash <sha>                   Stash a task away
+  tsk edit <sha>                    Edit a task
+  tsk query <regex>                 Find a task
+
+Examples:
+  $ tsk init --main                 # Setup a new task database
+  $ tsk status                      # Output tasks
+  $ tsk status --cal                # Output upcoming tasks in a cal format
+  $ tsk add 'Make cake' -t yum -i   # Create a new task in interactive mode
+
+Docs: https://github.com/yoshuawuyts/tsk
+Bugs: https://github.com/yoshuawuyts/tsk/issues
